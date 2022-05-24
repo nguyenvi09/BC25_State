@@ -27,6 +27,7 @@ export default class TryGlasses extends Component {
     const { glassList, changeGlass } = this.state;
     return (
       <div className="app">
+        <div className="overplay"></div>
         <h1 className="header">TRY GLASSES APP ONLINE</h1>
         <div className="container user">
           <div className="row">

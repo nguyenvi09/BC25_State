@@ -41,7 +41,19 @@
   background-image: url(./../public/glassesImage/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height:fit-content;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.overplay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: grey;
+  opacity: .3;
 }
 
 .header{
@@ -51,24 +63,27 @@
   color: white;
   text-align: center;
   position: fixed;
+  z-index: 9;
   width: 100%;
 }
 
 .user{
-  padding-top: 150px;
+  padding: 150px 0 100px 0;
 }
 
 .img-model{
   max-width: 40%;
   position: relative;
+  z-index: 9;
 }
 
 .change-glass{
   position: absolute;
   top: 67px;
-  left: 228px;
+  left: 237px;
   opacity: .7;
   max-width: 20%;
+  z-index: 9;
 }
 
 .img-glass{
@@ -76,4 +91,6 @@
   padding: 10px;
   border: 1px solid rgba(42, 41, 41, 0.445);
   cursor: pointer;
+  position: relative;
+  z-index: 9;
 }

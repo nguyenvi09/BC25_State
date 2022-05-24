@@ -19,7 +19,7 @@ export default class GlassList extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container bg-light p-3">
         <div className="row">{this.renderGlassList()}</div>
       </div>
     );
