@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.app{
+  background-image: url(./../public/glassesImage/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:fit-content;
+}
+
+.header{
+  padding: 20px;
+  background-color: black;
+  opacity: .5;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+.user{
+  padding-top: 150px;
+}
+
+.img-model{
+  max-width: 40%;
+}
+
+.img-glass{
+  max-width: 70%;
+  padding: 10px;
+  border: 1px solid rgba(42, 41, 41, 0.445);
+}
