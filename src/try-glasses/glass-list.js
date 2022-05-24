@@ -6,12 +6,18 @@ export default class GlassList extends Component {
     return this.props.glassList.map((item) => {
       //truyền props đặt tên là product chứa
       // thông tin chi tiết của từng sản phẩm sang glass-item
-      return <GlassItem key={item.id} product={item} />;
+      // truyền cho glass-item props để lấy dữ liệu
+      return (
+        <GlassItem
+          key={item.id}
+          product={item}
+          getProduct={this.props.getProduct}
+        />
+      );
     });
   };
 
   render() {
-    console.log(this.props.glassList);
     return (
       <div className="container">
         <div className="row">{this.renderGlassList()}</div>

@@ -60,10 +60,20 @@
 
 .img-model{
   max-width: 40%;
+  position: relative;
+}
+
+.change-glass{
+  position: absolute;
+  top: 67px;
+  left: 228px;
+  opacity: .7;
+  max-width: 20%;
 }
 
 .img-glass{
   max-width: 70%;
   padding: 10px;
   border: 1px solid rgba(42, 41, 41, 0.445);
+  cursor: pointer;
 }

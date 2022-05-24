@@ -6,7 +6,15 @@ export default class GlassItem extends Component {
     const { product } = this.props;
     return (
       <div className="col-md-2">
-        <img className="img-glass" src={product.url} alt="glass-item" />
+        <img
+          //handle event param
+          onClick={() => {
+            this.props.getProduct(product);
+          }}
+          className="img-glass"
+          src={product.url}
+          alt="glass-item"
+        />
       </div>
     );
   }
