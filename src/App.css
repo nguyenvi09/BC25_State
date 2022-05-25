@@ -52,8 +52,8 @@
   height: 100%;
   position: absolute;
   z-index: 2;
-  background-color: grey;
-  opacity: .3;
+  background-color: rgb(76, 74, 74);
+  opacity: .6;
 }
 
 .header{
@@ -68,7 +68,7 @@
 }
 
 .user{
-  padding: 150px 0 100px 0;
+  padding: 150px 0 50px 0;
 }
 
 .img-model{
@@ -80,9 +80,14 @@
 .change-glass{
   position: absolute;
   top: 67px;
-  left: 237px;
+  left: 235px;
   opacity: .7;
   max-width: 20%;
+  z-index: 9;
+}
+
+.glass-list{
+  position: relative;
   z-index: 9;
 }
 
